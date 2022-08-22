@@ -84,3 +84,16 @@ const Button = styled.button<CustomButtonProps>`
 
 expect(getCss(<Button size="big" />)).toBe('padding: 0.5rem;');
 ```
+
+## What about...
+
+Yes, there are a bunch of other tools doing mostly the same.
+But I missed one that great TS support + absolute minimal footprint.
+
+Shoutout to peers 😘
+
+- [styled-variant](https://www.npmjs.com/package/styled-variant)
+- [component-variants](https://www.npmjs.com/package/component-variants)
+- [styled-component-variant](https://www.npmjs.com/package/styled-component-variant)
+- [@styled-system/variant](https://www.npmjs.com/package/@styled-system/variant)
+- and probably more...
