@@ -15,7 +15,7 @@
   "scripts": {
     "pretest": "markdown-to-test readme.md -o test",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "prepublish": "npm run test"
+    "prepare": "npm run test"
   },
   "jest": {
     "preset": "ts-jest",
