@@ -4,12 +4,12 @@
   "description": "tiny helper to create variants of styled components",
   "main": "index.cjs",
   "module": "index.mjs",
-  "types": "vrnt.d.ts",
+  "types": "sc-variant.d.ts",
   "exports": {
     ".": {
       "import": "./index.mjs",
       "require": "./index.cjs",
-      "types": "./vrnt.d.ts"
+      "types": "./sc-variant.d.ts"
     }
   },
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Xiphe/vrnt.git"
+    "url": "git+ssh://git@github.com/Xiphe/sc-variant.git"
   },
   "keywords": [
     "styled-components",
@@ -35,9 +35,9 @@
   "author": "Hannes Diercks <node@xiphe.net> (https://xiphe.net/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Xiphe/vrnt/issues"
+    "url": "https://github.com/Xiphe/sc-variant/issues"
   },
-  "homepage": "https://github.com/Xiphe/vrnt#readme",
+  "homepage": "https://github.com/Xiphe/sc-variant#readme",
   "devDependencies": {
     "@types/jest": "28.1.7",
     "@types/react": "18.0.17",
