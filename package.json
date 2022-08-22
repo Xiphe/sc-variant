@@ -1,6 +1,6 @@
 {
   "name": "sc-variant",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "tiny helper to create variants of styled components",
   "main": "index.cjs",
   "module": "index.mjs",
