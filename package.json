@@ -1,10 +1,25 @@
 {
-  "name": "vrnt",
+  "name": "sc-variant",
   "version": "0.0.0-development",
   "description": "tiny helper to create variants of styled components",
-  "main": "dist/index.cjs",
+  "main": "index.cjs",
+  "module": "index.mjs",
+  "types": "vrnt.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs",
+      "types": "./vrnt.d.ts"
+    }
+  },
   "scripts": {
-    "test": "jest"
+    "pretest": "markdown-to-test readme.md -o test",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "prepublish": "npm run test"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
@@ -22,5 +37,19 @@
   "bugs": {
     "url": "https://github.com/Xiphe/vrnt/issues"
   },
-  "homepage": "https://github.com/Xiphe/vrnt#readme"
+  "homepage": "https://github.com/Xiphe/vrnt#readme",
+  "devDependencies": {
+    "@types/jest": "28.1.7",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "@types/styled-components": "5.1.26",
+    "jest": "28.1.3",
+    "markdown-to-test": "0.3.0",
+    "prettier": "2.7.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "5.3.5",
+    "ts-jest": "28.0.8",
+    "typescript": "4.7.4"
+  }
 }
