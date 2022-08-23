@@ -88,9 +88,9 @@ expect(getCss(<Button size="big" />)).toBe('padding: 0.5rem;');
 ## What about...
 
 Yes, there are a bunch of other tools doing mostly the same.
-But I missed one that great TS support + absolute minimal footprint.
+But I haven't found one with great TS support and absolute minimal footprint.
 
-Shoutout to peers 😘
+Still one of these might be more valuable to you: 😘
 
 - [styled-variant](https://www.npmjs.com/package/styled-variant)
 - [component-variants](https://www.npmjs.com/package/component-variants)
